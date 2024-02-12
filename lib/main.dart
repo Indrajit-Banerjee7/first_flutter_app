@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Scaffold(
-      backgroundColor: const Color.fromARGB(2, 47, 13, 241),
-      body: Container(
+      backgroundColor:  Color.fromARGB(2, 47, 13, 241),
+      body: GradientContainer() , 
+      // backgroundColor: MaterialAccentColor(Colors(23,23), 23),
+    ),
+  ));
+}
+
+class GradientContainer extends StatelessWidget {
+  const GradientContainer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
@@ -18,8 +29,6 @@ void main() {
         child: const Center(
           child: Text("Hello World"),
         ),
-      ),
-      // backgroundColor: MaterialAccentColor(Colors(23,23), 23),
-    ),
-  ));
+      );
+  }
 }
