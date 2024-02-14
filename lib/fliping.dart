@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 
 class ChangingImg extends StatefulWidget {
@@ -16,9 +17,10 @@ class _ChangingImgState extends State<ChangingImg> {
   void dotoss() {
     //logic
     setState(() {
-    usingPic = 'assets/pic-1.png';
+    int num = Random().nextInt(2)+1 ;
+    usingPic = 'assets/pic-$num.png';
     });
-    //print("working ");
+    print(usingPic);
   }
 
   @override
