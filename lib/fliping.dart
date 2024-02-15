@@ -20,7 +20,7 @@ class _ChangingImgState extends State<ChangingImg> {
     int num = Random().nextInt(2)+1 ;
     usingPic = 'assets/pic-$num.png';
     });
-    print(usingPic);
+    //print(usingPic);
   }
 
   @override

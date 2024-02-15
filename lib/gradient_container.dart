@@ -3,7 +3,7 @@ import 'package:first_app/fliping.dart';
 // import 'package:first_app/style_text.dart';
 
 class GradientContainer extends StatelessWidget {
-   GradientContainer(this.col, this.begin, this.end, {super.key});
+   const GradientContainer(this.col, this.begin, this.end, {super.key});
 
   final List<Color> col;
   final Alignment begin;
